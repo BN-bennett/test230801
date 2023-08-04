@@ -4,7 +4,7 @@ body {
 .number_slot{
   position: absolute;
   top: 35px;
-  left: 1465px;
+  left: 1550px;
   border: 0.1rem solid white;
   height: 95px;
   width: 245px;
@@ -31,13 +31,6 @@ body {
   left: 15px;
   color: red;
   border-color: red;
-}
-.No_2{
-  position: absolute;
-  top: 40px;
-  left: 60px;
-  color: cyan;
-  border-color: cyan;
 }
 .No_2{
   position: absolute;
@@ -272,7 +265,28 @@ body {
   display: inline-block;
   margin: 10px 5px;
   color: white;
-  font-size: 11px;
+  font-size: 12px;
+}
+.impactemp_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 0px;
+  left: 1420px;
+  border: 2px solid white;
+  text-align: center;
+}
+.impactemp {
+  position: absolute;
+  top: 45px;
+  left: 1443px;
+  border: 2px solid rgb(0, 255, 128);
+}
+.impactemp_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
 }
 /* 방어측 가젯 위치 결정 */
 .reinforcement_slot {
@@ -448,15 +462,15 @@ body {
   width: 70px;
   height: 90px;
   position: absolute;
-  top: 75px;
-  left: 740px;
+  top: -30px;
+  left: 1420px;
   border: 2px solid white;
   text-align: center;
 }
 .ovblock {
   position: absolute;
-  top: 125px;
-  left: 773px;
+  top: 15px;
+  left: 1445px;
   border: 2px solid rgb(0, 255, 128);
 }
 .ovblock_slot span {
