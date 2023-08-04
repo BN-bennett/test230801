@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R6 리그 맵 전략 툴</title>
+    <link rel="stylesheet" href="./css/html5Doctor.css">
+</head>
+<body>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 공격측 구역  -->
+    <div class="attacker_slot">
+        <img src="./oper_icon/sledge.jpg" alt="" class="drag-and-drop icon" id="sledge">
+        <img src="./oper_icon/sledge.jpg" alt="" class="drag-and-drop icon" id="sledge">
+        <img src="./oper_icon/sledge.jpg" alt="" class="drag-and-drop icon" id="sledge">
+        <img src="./oper_icon/sledge.jpg" alt="" class="drag-and-drop icon" id="sledge">
+        <img src="./oper_icon/sledge.jpg" alt="" class="drag-and-drop icon" id="sledge">
+        <img src="./oper_icon/thatcher.jpg" alt="" class="drag-and-drop icon" id="thatcher">
+        <img src="./oper_icon/thatcher.jpg" alt="" class="drag-and-drop icon" id="thatcher">
+        <img src="./oper_icon/thatcher.jpg" alt="" class="drag-and-drop icon" id="thatcher">
+        <img src="./oper_icon/thatcher.jpg" alt="" class="drag-and-drop icon" id="thatcher">
+        <img src="./oper_icon/thatcher.jpg" alt="" class="drag-and-drop icon" id="thatcher">
+        <img src="./oper_icon/ash.jpg" alt="" class="drag-and-drop icon" id="ash">
+        <img src="./oper_icon/ash.jpg" alt="" class="drag-and-drop icon" id="ash">
+        <img src="./oper_icon/ash.jpg" alt="" class="drag-and-drop icon" id="ash">
+        <img src="./oper_icon/ash.jpg" alt="" class="drag-and-drop icon" id="ash">
+        <img src="./oper_icon/ash.jpg" alt="" class="drag-and-drop icon" id="ash">
+        <img src="./oper_icon/thermite.jpg" alt="" class="drag-and-drop icon" id="thermite">
+        <img src="./oper_icon/thermite.jpg" alt="" class="drag-and-drop icon" id="thermite">
+        <img src="./oper_icon/thermite.jpg" alt="" class="drag-and-drop icon" id="thermite">
+        <img src="./oper_icon/thermite.jpg" alt="" class="drag-and-drop icon" id="thermite">
+        <img src="./oper_icon/thermite.jpg" alt="" class="drag-and-drop icon" id="thermite">
+        <img src="./oper_icon/twitch.jpg" alt="" class="drag-and-drop icon" id="twitch">
+        <img src="./oper_icon/twitch.jpg" alt="" class="drag-and-drop icon" id="twitch">
+        <img src="./oper_icon/twitch.jpg" alt="" class="drag-and-drop icon" id="twitch">
+        <img src="./oper_icon/twitch.jpg" alt="" class="drag-and-drop icon" id="twitch">
+        <img src="./oper_icon/twitch.jpg" alt="" class="drag-and-drop icon" id="twitch">
+        <img src="./oper_icon/montagne.jpg" alt="" class="drag-and-drop icon" id="montagne">
+        <img src="./oper_icon/montagne.jpg" alt="" class="drag-and-drop icon" id="montagne">
+        <img src="./oper_icon/montagne.jpg" alt="" class="drag-and-drop icon" id="montagne">
+        <img src="./oper_icon/montagne.jpg" alt="" class="drag-and-drop icon" id="montagne">
+        <img src="./oper_icon/montagne.jpg" alt="" class="drag-and-drop icon" id="montagne">
+        <img src="./oper_icon/glaz.jpg" alt="" class="drag-and-drop icon" id="glaz">
+        <img src="./oper_icon/glaz.jpg" alt="" class="drag-and-drop icon" id="glaz">
+        <img src="./oper_icon/glaz.jpg" alt="" class="drag-and-drop icon" id="glaz">
+        <img src="./oper_icon/glaz.jpg" alt="" class="drag-and-drop icon" id="glaz">
+        <img src="./oper_icon/glaz.jpg" alt="" class="drag-and-drop icon" id="glaz">
+        <img src="./oper_icon/fuze.jpg" alt="" class="drag-and-drop icon" id="fuze">
+        <img src="./oper_icon/fuze.jpg" alt="" class="drag-and-drop icon" id="fuze">
+        <img src="./oper_icon/fuze.jpg" alt="" class="drag-and-drop icon" id="fuze">
+        <img src="./oper_icon/fuze.jpg" alt="" class="drag-and-drop icon" id="fuze">
+        <img src="./oper_icon/fuze.jpg" alt="" class="drag-and-drop icon" id="fuze">
+        <img src="./oper_icon/blitz.jpg" alt="" class="drag-and-drop icon" id="blitz">
+        <img src="./oper_icon/blitz.jpg" alt="" class="drag-and-drop icon" id="blitz">
+        <img src="./oper_icon/blitz.jpg" alt="" class="drag-and-drop icon" id="blitz">
+        <img src="./oper_icon/blitz.jpg" alt="" class="drag-and-drop icon" id="blitz">
+        <img src="./oper_icon/blitz.jpg" alt="" class="drag-and-drop icon" id="blitz">
+        <img src="./oper_icon/iq.jpg" alt="" class="drag-and-drop icon" id="iq">
+        <img src="./oper_icon/iq.jpg" alt="" class="drag-and-drop icon" id="iq">
+        <img src="./oper_icon/iq.jpg" alt="" class="drag-and-drop icon" id="iq">
+        <img src="./oper_icon/iq.jpg" alt="" class="drag-and-drop icon" id="iq">
+        <img src="./oper_icon/iq.jpg" alt="" class="drag-and-drop icon" id="iq">
+        <img src="./oper_icon/buck.jpg" alt="" class="drag-and-drop icon" id="buck">
+        <img src="./oper_icon/buck.jpg" alt="" class="drag-and-drop icon" id="buck">
+        <img src="./oper_icon/buck.jpg" alt="" class="drag-and-drop icon" id="buck">
+        <img src="./oper_icon/buck.jpg" alt="" class="drag-and-drop icon" id="buck">
+        <img src="./oper_icon/buck.jpg" alt="" class="drag-and-drop icon" id="buck">
+        <img src="./oper_icon/blackbeard.jpg" alt="" class="drag-and-drop icon" id="blackbeard">
+        <img src="./oper_icon/blackbeard.jpg" alt="" class="drag-and-drop icon" id="blackbeard">
+        <img src="./oper_icon/blackbeard.jpg" alt="" class="drag-and-drop icon" id="blackbeard">
+        <img src="./oper_icon/blackbeard.jpg" alt="" class="drag-and-drop icon" id="blackbeard">
+        <img src="./oper_icon/blackbeard.jpg" alt="" class="drag-and-drop icon" id="blackbeard">
+        <img src="./oper_icon/capitao.jpg" alt="" class="drag-and-drop icon" id="capitao">
+        <img src="./oper_icon/capitao.jpg" alt="" class="drag-and-drop icon" id="capitao">
+        <img src="./oper_icon/capitao.jpg" alt="" class="drag-and-drop icon" id="capitao">
+        <img src="./oper_icon/capitao.jpg" alt="" class="drag-and-drop icon" id="capitao">
+        <img src="./oper_icon/capitao.jpg" alt="" class="drag-and-drop icon" id="capitao">
+        <img src="./oper_icon/hibana.jpg" alt="" class="drag-and-drop icon" id="hibana">
+        <img src="./oper_icon/hibana.jpg" alt="" class="drag-and-drop icon" id="hibana">
+        <img src="./oper_icon/hibana.jpg" alt="" class="drag-and-drop icon" id="hibana">
+        <img src="./oper_icon/hibana.jpg" alt="" class="drag-and-drop icon" id="hibana">
+        <img src="./oper_icon/hibana.jpg" alt="" class="drag-and-drop icon" id="hibana">
+        <img src="./oper_icon/jackal.jpg" alt="" class="drag-and-drop icon" id="jackal">
+        <img src="./oper_icon/jackal.jpg" alt="" class="drag-and-drop icon" id="jackal">
+        <img src="./oper_icon/jackal.jpg" alt="" class="drag-and-drop icon" id="jackal">
+        <img src="./oper_icon/jackal.jpg" alt="" class="drag-and-drop icon" id="jackal">
+        <img src="./oper_icon/jackal.jpg" alt="" class="drag-and-drop icon" id="jackal">
+        <img src="./oper_icon/ying.jpg" alt="" class="drag-and-drop icon" id="ying">
+        <img src="./oper_icon/ying.jpg" alt="" class="drag-and-drop icon" id="ying">
+        <img src="./oper_icon/ying.jpg" alt="" class="drag-and-drop icon" id="ying">
+        <img src="./oper_icon/ying.jpg" alt="" class="drag-and-drop icon" id="ying">
+        <img src="./oper_icon/ying.jpg" alt="" class="drag-and-drop icon" id="ying">
+        <img src="./oper_icon/zofia.jpg" alt="" class="drag-and-drop icon" id="zofia">
+        <img src="./oper_icon/zofia.jpg" alt="" class="drag-and-drop icon" id="zofia">
+        <img src="./oper_icon/zofia.jpg" alt="" class="drag-and-drop icon" id="zofia">
+        <img src="./oper_icon/zofia.jpg" alt="" class="drag-and-drop icon" id="zofia">
+        <img src="./oper_icon/zofia.jpg" alt="" class="drag-and-drop icon" id="zofia">
+        <img src="./oper_icon/dokkaebi.jpg" alt="" class="drag-and-drop icon" id="dokkaebi">
+        <img src="./oper_icon/dokkaebi.jpg" alt="" class="drag-and-drop icon" id="dokkaebi">
+        <img src="./oper_icon/dokkaebi.jpg" alt="" class="drag-and-drop icon" id="dokkaebi">
+        <img src="./oper_icon/dokkaebi.jpg" alt="" class="drag-and-drop icon" id="dokkaebi">
+        <img src="./oper_icon/dokkaebi.jpg" alt="" class="drag-and-drop icon" id="dokkaebi">
+        <img src="./oper_icon/lion.jpg" alt="" class="drag-and-drop icon" id="lion">
+        <img src="./oper_icon/lion.jpg" alt="" class="drag-and-drop icon" id="lion">
+        <img src="./oper_icon/lion.jpg" alt="" class="drag-and-drop icon" id="lion">
+        <img src="./oper_icon/lion.jpg" alt="" class="drag-and-drop icon" id="lion">
+        <img src="./oper_icon/lion.jpg" alt="" class="drag-and-drop icon" id="lion">
+        <img src="./oper_icon/finka.jpg" alt="" class="drag-and-drop icon" id="finka">
+        <img src="./oper_icon/finka.jpg" alt="" class="drag-and-drop icon" id="finka">
+        <img src="./oper_icon/finka.jpg" alt="" class="drag-and-drop icon" id="finka">
+        <img src="./oper_icon/finka.jpg" alt="" class="drag-and-drop icon" id="finka">
+        <img src="./oper_icon/finka.jpg" alt="" class="drag-and-drop icon" id="finka">
+        <img src="./oper_icon/maverick.jpg" alt="" class="drag-and-drop icon" id="maverick">
+        <img src="./oper_icon/maverick.jpg" alt="" class="drag-and-drop icon" id="maverick">
+        <img src="./oper_icon/maverick.jpg" alt="" class="drag-and-drop icon" id="maverick">
+        <img src="./oper_icon/maverick.jpg" alt="" class="drag-and-drop icon" id="maverick">
+        <img src="./oper_icon/maverick.jpg" alt="" class="drag-and-drop icon" id="maverick">
+        <img src="./oper_icon/nomad.jpg" alt="" class="drag-and-drop icon" id="nomad">
+        <img src="./oper_icon/nomad.jpg" alt="" class="drag-and-drop icon" id="nomad">
+        <img src="./oper_icon/nomad.jpg" alt="" class="drag-and-drop icon" id="nomad">
+        <img src="./oper_icon/nomad.jpg" alt="" class="drag-and-drop icon" id="nomad">
+        <img src="./oper_icon/nomad.jpg" alt="" class="drag-and-drop icon" id="nomad">
+        <img src="./oper_icon/gridlock.jpg" alt="" class="drag-and-drop icon" id="gridlock">
+        <img src="./oper_icon/gridlock.jpg" alt="" class="drag-and-drop icon" id="gridlock">
+        <img src="./oper_icon/gridlock.jpg" alt="" class="drag-and-drop icon" id="gridlock">
+        <img src="./oper_icon/gridlock.jpg" alt="" class="drag-and-drop icon" id="gridlock">
+        <img src="./oper_icon/gridlock.jpg" alt="" class="drag-and-drop icon" id="gridlock">
+        <img src="./oper_icon/nokk.jpg" alt="" class="drag-and-drop icon" id="nokk">
+        <img src="./oper_icon/nokk.jpg" alt="" class="drag-and-drop icon" id="nokk">
+        <img src="./oper_icon/nokk.jpg" alt="" class="drag-and-drop icon" id="nokk">
+        <img src="./oper_icon/nokk.jpg" alt="" class="drag-and-drop icon" id="nokk">
+        <img src="./oper_icon/nokk.jpg" alt="" class="drag-and-drop icon" id="nokk">
+        <img src="./oper_icon/amaru.jpg" alt="" class="drag-and-drop icon" id="amaru">
+        <img src="./oper_icon/amaru.jpg" alt="" class="drag-and-drop icon" id="amaru">
+        <img src="./oper_icon/amaru.jpg" alt="" class="drag-and-drop icon" id="amaru">
+        <img src="./oper_icon/amaru.jpg" alt="" class="drag-and-drop icon" id="amaru">
+        <img src="./oper_icon/amaru.jpg" alt="" class="drag-and-drop icon" id="amaru">
+        <img src="./oper_icon/kali.jpg" alt="" class="drag-and-drop icon" id="kali">
+        <img src="./oper_icon/kali.jpg" alt="" class="drag-and-drop icon" id="kali">
+        <img src="./oper_icon/kali.jpg" alt="" class="drag-and-drop icon" id="kali">
+        <img src="./oper_icon/kali.jpg" alt="" class="drag-and-drop icon" id="kali">
+        <img src="./oper_icon/kali.jpg" alt="" class="drag-and-drop icon" id="kali">
+        <img src="./oper_icon/iana.jpg" alt="" class="drag-and-drop icon" id="iana">
+        <img src="./oper_icon/iana.jpg" alt="" class="drag-and-drop icon" id="iana">
+        <img src="./oper_icon/iana.jpg" alt="" class="drag-and-drop icon" id="iana">
+        <img src="./oper_icon/iana.jpg" alt="" class="drag-and-drop icon" id="iana">
+        <img src="./oper_icon/iana.jpg" alt="" class="drag-and-drop icon" id="iana">
+        <img src="./oper_icon/ace.jpg" alt="" class="drag-and-drop icon" id="ace">
+        <img src="./oper_icon/ace.jpg" alt="" class="drag-and-drop icon" id="ace">
+        <img src="./oper_icon/ace.jpg" alt="" class="drag-and-drop icon" id="ace">
+        <img src="./oper_icon/ace.jpg" alt="" class="drag-and-drop icon" id="ace">
+        <img src="./oper_icon/ace.jpg" alt="" class="drag-and-drop icon" id="ace">
+        <img src="./oper_icon/zero.jpg" alt="" class="drag-and-drop icon" id="zero">
+        <img src="./oper_icon/zero.jpg" alt="" class="drag-and-drop icon" id="zero">
+        <img src="./oper_icon/zero.jpg" alt="" class="drag-and-drop icon" id="zero">
+        <img src="./oper_icon/zero.jpg" alt="" class="drag-and-drop icon" id="zero">
+        <img src="./oper_icon/zero.jpg" alt="" class="drag-and-drop icon" id="zero">
+        <img src="./oper_icon/flores.jpg" alt="" class="drag-and-drop icon" id="flores">
+        <img src="./oper_icon/flores.jpg" alt="" class="drag-and-drop icon" id="flores">
+        <img src="./oper_icon/flores.jpg" alt="" class="drag-and-drop icon" id="flores">
+        <img src="./oper_icon/flores.jpg" alt="" class="drag-and-drop icon" id="flores">
+        <img src="./oper_icon/flores.jpg" alt="" class="drag-and-drop icon" id="flores">
+        <img src="./oper_icon/osa.jpg" alt="" class="drag-and-drop icon" id="osa">
+        <img src="./oper_icon/osa.jpg" alt="" class="drag-and-drop icon" id="osa">
+        <img src="./oper_icon/osa.jpg" alt="" class="drag-and-drop icon" id="osa">
+        <img src="./oper_icon/osa.jpg" alt="" class="drag-and-drop icon" id="osa">
+        <img src="./oper_icon/osa.jpg" alt="" class="drag-and-drop icon" id="osa">
+        <img src="./oper_icon/sens.jpg" alt="" class="drag-and-drop icon" id="sens">
+        <img src="./oper_icon/sens.jpg" alt="" class="drag-and-drop icon" id="sens">
+        <img src="./oper_icon/sens.jpg" alt="" class="drag-and-drop icon" id="sens">
+        <img src="./oper_icon/sens.jpg" alt="" class="drag-and-drop icon" id="sens">
+        <img src="./oper_icon/sens.jpg" alt="" class="drag-and-drop icon" id="sens">
+        <img src="./oper_icon/brava.jpg" alt="" class="drag-and-drop icon" id="brava">
+        <img src="./oper_icon/brava.jpg" alt="" class="drag-and-drop icon" id="brava">
+        <img src="./oper_icon/brava.jpg" alt="" class="drag-and-drop icon" id="brava">
+        <img src="./oper_icon/brava.jpg" alt="" class="drag-and-drop icon" id="brava">
+        <img src="./oper_icon/brava.jpg" alt="" class="drag-and-drop icon" id="brava">
+        <div class="drone_slot">
+            <span>드론</span>
+          </div>
+          <img src="./gadget_icon/drone.jpg" alt="" class="drone gadget drag-and-drop">
+          <img src="./gadget_icon/drone.jpg" alt="" class="drone gadget drag-and-drop">
+          <img src="./gadget_icon/drone.jpg" alt="" class="drone gadget drag-and-drop">
+          <img src="./gadget_icon/drone.jpg" alt="" class="drone gadget drag-and-drop">
+          <img src="./gadget_icon/drone.jpg" alt="" class="drone gadget drag-and-drop">
+          <img src="./gadget_icon/drone.jpg" alt="" class="drone gadget drag-and-drop">
+          <img src="./gadget_icon/drone.jpg" alt="" class="drone gadget drag-and-drop">
+          <img src="./gadget_icon/drone.jpg" alt="" class="drone gadget drag-and-drop">
+          <img src="./gadget_icon/drone.jpg" alt="" class="drone gadget drag-and-drop">
+          <img src="./gadget_icon/drone.jpg" alt="" class="drone gadget drag-and-drop">
+          <div class="breaching_slot">
+            <span>접착 폭약</span>
+          </div>
+            <img src="./gadget_icon/breaching.jpg" alt="" class="breaching gadget drag-and-drop">
+            <img src="./gadget_icon/breaching.jpg" alt="" class="breaching gadget drag-and-drop">
+            <img src="./gadget_icon/breaching.jpg" alt="" class="breaching gadget drag-and-drop">
+            <img src="./gadget_icon/breaching.jpg" alt="" class="breaching gadget drag-and-drop">
+            <img src="./gadget_icon/breaching.jpg" alt="" class="breaching gadget drag-and-drop">
+            <img src="./gadget_icon/breaching.jpg" alt="" class="breaching gadget drag-and-drop">
+            <img src="./gadget_icon/breaching.jpg" alt="" class="breaching gadget drag-and-drop">
+            <img src="./gadget_icon/breaching.jpg" alt="" class="breaching gadget drag-and-drop">
+            <img src="./gadget_icon/breaching.jpg" alt="" class="breaching gadget drag-and-drop">
+            <div class="claymore_slot">
+                <span>대인 지뢰</span>
+            </div>
+            <img src="./gadget_icon/claymore.jpg" alt="" class="claymore gadget drag-and-drop">
+            <img src="./gadget_icon/claymore.jpg" alt="" class="claymore gadget drag-and-drop">
+            <img src="./gadget_icon/claymore.jpg" alt="" class="claymore gadget drag-and-drop">
+            <img src="./gadget_icon/claymore.jpg" alt="" class="claymore gadget drag-and-drop">
+            <img src="./gadget_icon/claymore.jpg" alt="" class="claymore gadget drag-and-drop">
+            <img src="./gadget_icon/claymore.jpg" alt="" class="claymore gadget drag-and-drop">
+            <div class="smoke_slot">
+                <span>연막탄</span>
+            </div>
+            <img src="./gadget_icon/smoke.jpg" alt="" class="smoke gadget drag-and-drop">
+            <img src="./gadget_icon/smoke.jpg" alt="" class="smoke gadget drag-and-drop">
+            <img src="./gadget_icon/smoke.jpg" alt="" class="smoke gadget drag-and-drop">
+            <img src="./gadget_icon/smoke.jpg" alt="" class="smoke gadget drag-and-drop">
+            <img src="./gadget_icon/smoke.jpg" alt="" class="smoke gadget drag-and-drop">
+            <img src="./gadget_icon/smoke.jpg" alt="" class="smoke gadget drag-and-drop">
+            <div class="grenade_slot">
+                <span>수류탄</span>
+            </div>
+            <img src="./gadget_icon/grenade.jpg" alt="" class="grenade gadget drag-and-drop">
+            <img src="./gadget_icon/grenade.jpg" alt="" class="grenade gadget drag-and-drop">
+            <img src="./gadget_icon/grenade.jpg" alt="" class="grenade gadget drag-and-drop">
+            <img src="./gadget_icon/grenade.jpg" alt="" class="grenade gadget drag-and-drop">
+            <img src="./gadget_icon/grenade.jpg" alt="" class="grenade gadget drag-and-drop">
+            <img src="./gadget_icon/grenade.jpg" alt="" class="grenade gadget drag-and-drop">
+            <div class="flash_slot">
+                <span>섬광탄</span>
+            </div>
+            <img src="./gadget_icon/flash.jpg" alt="" class="flash gadget drag-and-drop">
+            <img src="./gadget_icon/flash.jpg" alt="" class="flash gadget drag-and-drop">
+            <img src="./gadget_icon/flash.jpg" alt="" class="flash gadget drag-and-drop">
+            <img src="./gadget_icon/flash.jpg" alt="" class="flash gadget drag-and-drop">
+            <img src="./gadget_icon/flash.jpg" alt="" class="flash gadget drag-and-drop">
+            <img src="./gadget_icon/flash.jpg" alt="" class="flash gadget drag-and-drop">
+            <img src="./gadget_icon/flash.jpg" alt="" class="flash gadget drag-and-drop">
+            <img src="./gadget_icon/flash.jpg" alt="" class="flash gadget drag-and-drop">
+            <img src="./gadget_icon/flash.jpg" alt="" class="flash gadget drag-and-drop">
+            <div class="hardbreaching_slot">
+                <span>강력 접착 폭약</span>
+            </div>
+            <img src="./gadget_icon/hardbreaching.jpg" alt="" class="hardbreaching gadget drag-and-drop">
+            <img src="./gadget_icon/hardbreaching.jpg" alt="" class="hardbreaching gadget drag-and-drop">
+            <img src="./gadget_icon/hardbreaching.jpg" alt="" class="hardbreaching gadget drag-and-drop">
+            <img src="./gadget_icon/hardbreaching.jpg" alt="" class="hardbreaching gadget drag-and-drop">
+            <img src="./gadget_icon/hardbreaching.jpg" alt="" class="hardbreaching gadget drag-and-drop">
+            <img src="./gadget_icon/hardbreaching.jpg" alt="" class="hardbreaching gadget drag-and-drop">
+            <img src="./gadget_icon/hardbreaching.jpg" alt="" class="hardbreaching gadget drag-and-drop">
+            <img src="./gadget_icon/hardbreaching.jpg" alt="" class="hardbreaching gadget drag-and-drop">
+            <div class="defuser_slot">
+                <span>디퓨저</span>
+            </div>
+                <img src="./gadget_icon/defuser.jpg" alt="" class="defuser gadget drag-and-drop">
+                <img src="./gadget_icon/defuser.jpg" alt="" class="defuser gadget drag-and-drop">
+                <img src="./gadget_icon/defuser.jpg" alt="" class="defuser gadget drag-and-drop">
+                <img src="./gadget_icon/defuser.jpg" alt="" class="defuser gadget drag-and-drop">
+                <img src="./gadget_icon/defuser.jpg" alt="" class="defuser gadget drag-and-drop">
+        </div>
+    <div class="number_slot">
+        <h1 class="number_slot_title">인원 배치</h1>
+        <div class="drag-and-drop numbers No_1">
+          <h1>1</h1>
+        </div>
+        <div class="drag-and-drop numbers No_1">
+          <h1>1</h1>
+        </div>
+        <div class="drag-and-drop numbers No_1">
+          <h1>1</h1>
+        </div>
+        <div class="drag-and-drop numbers No_1">
+          <h1>1</h1>
+        </div>
+        <div class="drag-and-drop numbers No_1">
+          <h1>1</h1>
+        </div>
+        <div class="drag-and-drop numbers No_1">
+          <h1>1</h1>
+        </div>
+        <div class="drag-and-drop numbers No_2">
+          <h1>2</h1>
+        </div>
+        <div class="drag-and-drop numbers No_2">
+          <h1>2</h1>
+        </div>
+        <div class="drag-and-drop numbers No_2">
+          <h1>2</h1>
+        </div>
+        <div class="drag-and-drop numbers No_2">
+          <h1>2</h1>
+        </div>
+        <div class="drag-and-drop numbers No_2">
+          <h1>2</h1>
+        </div>
+        <div class="drag-and-drop numbers No_3">
+          <h1>3</h1>
+        </div>
+        <div class="drag-and-drop numbers No_3">
+          <h1>3</h1>
+        </div>
+        <div class="drag-and-drop numbers No_3">
+          <h1>3</h1>
+        </div>
+        <div class="drag-and-drop numbers No_3">
+          <h1>3</h1>
+        </div>
+        <div class="drag-and-drop numbers No_3">
+          <h1>3</h1>
+        </div>
+        <div class="drag-and-drop numbers No_4">
+          <h1>4</h1>
+        </div>
+        <div class="drag-and-drop numbers No_4">
+          <h1>4</h1>
+        </div>
+        <div class="drag-and-drop numbers No_4">
+          <h1>4</h1>
+        </div>
+        <div class="drag-and-drop numbers No_4">
+          <h1>4</h1>
+        </div>
+        <div class="drag-and-drop numbers No_4">
+          <h1>4</h1>
+        </div>
+        <div class="drag-and-drop numbers No_5">
+          <h1>5</h1>
+        </div>
+        <div class="drag-and-drop numbers No_5">
+          <h1>5</h1>
+        </div>
+        <div class="drag-and-drop numbers No_5">
+          <h1>5</h1>
+        </div>
+        <div class="drag-and-drop numbers No_5">
+          <h1>5</h1>
+        </div>
+        <div class="drag-and-drop numbers No_5">
+          <h1>5</h1>
+        </div>
+        <div class="drag-and-drop numbers No_5">
+          <h1>5</h1>
+        </div>
+      </div>
+    <!-- 공격측 영역 끝-->
+    <br>
+    <!-- 방어측 구역  -->
+    <div class="defender_slot">
+      <img src="./oper_icon/smoke.jpg" alt="" class="drag-and-drop icon" id="smoke">
+      <img src="./oper_icon/smoke.jpg" alt="" class="drag-and-drop icon" id="smoke">
+      <img src="./oper_icon/smoke.jpg" alt="" class="drag-and-drop icon" id="smoke">
+      <img src="./oper_icon/smoke.jpg" alt="" class="drag-and-drop icon" id="smoke">
+      <img src="./oper_icon/smoke.jpg" alt="" class="drag-and-drop icon" id="smoke">
+      <img src="./oper_icon/mute.jpg" alt="" class="drag-and-drop icon" id="mute">
+      <img src="./oper_icon/mute.jpg" alt="" class="drag-and-drop icon" id="mute">
+      <img src="./oper_icon/mute.jpg" alt="" class="drag-and-drop icon" id="mute">
+      <img src="./oper_icon/mute.jpg" alt="" class="drag-and-drop icon" id="mute">
+      <img src="./oper_icon/mute.jpg" alt="" class="drag-and-drop icon" id="mute">
+      <img src="./oper_icon/castle.jpg" alt="" class="drag-and-drop icon" id="castle">
+      <img src="./oper_icon/castle.jpg" alt="" class="drag-and-drop icon" id="castle">
+      <img src="./oper_icon/castle.jpg" alt="" class="drag-and-drop icon" id="castle">
+      <img src="./oper_icon/castle.jpg" alt="" class="drag-and-drop icon" id="castle">
+      <img src="./oper_icon/castle.jpg" alt="" class="drag-and-drop icon" id="castle">
+      <img src="./oper_icon/pulse.jpg" alt="" class="drag-and-drop icon" id="pulse">
+      <img src="./oper_icon/pulse.jpg" alt="" class="drag-and-drop icon" id="pulse">
+      <img src="./oper_icon/pulse.jpg" alt="" class="drag-and-drop icon" id="pulse">
+      <img src="./oper_icon/pulse.jpg" alt="" class="drag-and-drop icon" id="pulse">
+      <img src="./oper_icon/pulse.jpg" alt="" class="drag-and-drop icon" id="pulse">
+      <img src="./oper_icon/doc.jpg" alt="" class="drag-and-drop icon" id="doc">
+      <img src="./oper_icon/doc.jpg" alt="" class="drag-and-drop icon" id="doc">
+      <img src="./oper_icon/doc.jpg" alt="" class="drag-and-drop icon" id="doc">
+      <img src="./oper_icon/doc.jpg" alt="" class="drag-and-drop icon" id="doc">
+      <img src="./oper_icon/doc.jpg" alt="" class="drag-and-drop icon" id="doc">
+      <img src="./oper_icon/rook.jpg" alt="" class="drag-and-drop icon" id="rook">
+      <img src="./oper_icon/rook.jpg" alt="" class="drag-and-drop icon" id="rook">
+      <img src="./oper_icon/rook.jpg" alt="" class="drag-and-drop icon" id="rook">
+      <img src="./oper_icon/rook.jpg" alt="" class="drag-and-drop icon" id="rook">
+      <img src="./oper_icon/rook.jpg" alt="" class="drag-and-drop icon" id="rook">
+      <img src="./oper_icon/kapkan.jpg" alt="" class="drag-and-drop icon" id="kapkan">
+      <img src="./oper_icon/kapkan.jpg" alt="" class="drag-and-drop icon" id="kapkan">
+      <img src="./oper_icon/kapkan.jpg" alt="" class="drag-and-drop icon" id="kapkan">
+      <img src="./oper_icon/kapkan.jpg" alt="" class="drag-and-drop icon" id="kapkan">
+      <img src="./oper_icon/kapkan.jpg" alt="" class="drag-and-drop icon" id="kapkan">
+      <img src="./oper_icon/tachanka.jpg" alt="" class="drag-and-drop icon" id="tachanka">
+      <img src="./oper_icon/tachanka.jpg" alt="" class="drag-and-drop icon" id="tachanka">
+      <img src="./oper_icon/tachanka.jpg" alt="" class="drag-and-drop icon" id="tachanka">
+      <img src="./oper_icon/tachanka.jpg" alt="" class="drag-and-drop icon" id="tachanka">
+      <img src="./oper_icon/tachanka.jpg" alt="" class="drag-and-drop icon" id="tachanka">
+      <img src="./oper_icon/jager.jpg" alt="" class="drag-and-drop icon" id="jager">
+      <img src="./oper_icon/jager.jpg" alt="" class="drag-and-drop icon" id="jager">
+      <img src="./oper_icon/jager.jpg" alt="" class="drag-and-drop icon" id="jager">
+      <img src="./oper_icon/jager.jpg" alt="" class="drag-and-drop icon" id="jager">
+      <img src="./oper_icon/jager.jpg" alt="" class="drag-and-drop icon" id="jager">
+      <img src="./oper_icon/bandit.jpg" alt="" class="drag-and-drop icon" id="bandit">
+      <img src="./oper_icon/bandit.jpg" alt="" class="drag-and-drop icon" id="bandit">
+      <img src="./oper_icon/bandit.jpg" alt="" class="drag-and-drop icon" id="bandit">
+      <img src="./oper_icon/bandit.jpg" alt="" class="drag-and-drop icon" id="bandit">
+      <img src="./oper_icon/bandit.jpg" alt="" class="drag-and-drop icon" id="bandit">
+      <img src="./oper_icon/frost.jpg" alt="" class="drag-and-drop icon" id="frost">
+      <img src="./oper_icon/frost.jpg" alt="" class="drag-and-drop icon" id="frost">
+      <img src="./oper_icon/frost.jpg" alt="" class="drag-and-drop icon" id="frost">
+      <img src="./oper_icon/frost.jpg" alt="" class="drag-and-drop icon" id="frost">
+      <img src="./oper_icon/frost.jpg" alt="" class="drag-and-drop icon" id="frost">
+      <img src="./oper_icon/valkyrie.jpg" alt="" class="drag-and-drop icon" id="valkyrie">
+      <img src="./oper_icon/valkyrie.jpg" alt="" class="drag-and-drop icon" id="valkyrie">
+      <img src="./oper_icon/valkyrie.jpg" alt="" class="drag-and-drop icon" id="valkyrie">
+      <img src="./oper_icon/valkyrie.jpg" alt="" class="drag-and-drop icon" id="valkyrie">
+      <img src="./oper_icon/valkyrie.jpg" alt="" class="drag-and-drop icon" id="valkyrie">
+      <img src="./oper_icon/caveira.jpg" alt="" class="drag-and-drop icon" id="caveira">
+      <img src="./oper_icon/caveira.jpg" alt="" class="drag-and-drop icon" id="caveira">
+      <img src="./oper_icon/caveira.jpg" alt="" class="drag-and-drop icon" id="caveira">
+      <img src="./oper_icon/caveira.jpg" alt="" class="drag-and-drop icon" id="caveira">
+      <img src="./oper_icon/caveira.jpg" alt="" class="drag-and-drop icon" id="caveira">
+      <img src="./oper_icon/echo.jpg" alt="" class="drag-and-drop icon" id="echo">
+      <img src="./oper_icon/echo.jpg" alt="" class="drag-and-drop icon" id="echo">
+      <img src="./oper_icon/echo.jpg" alt="" class="drag-and-drop icon" id="echo">
+      <img src="./oper_icon/echo.jpg" alt="" class="drag-and-drop icon" id="echo">
+      <img src="./oper_icon/echo.jpg" alt="" class="drag-and-drop icon" id="echo">
+      <img src="./oper_icon/mira.jpg" alt="" class="drag-and-drop icon" id="mira">
+      <img src="./oper_icon/mira.jpg" alt="" class="drag-and-drop icon" id="mira">
+      <img src="./oper_icon/mira.jpg" alt="" class="drag-and-drop icon" id="mira">
+      <img src="./oper_icon/mira.jpg" alt="" class="drag-and-drop icon" id="mira">
+      <img src="./oper_icon/mira.jpg" alt="" class="drag-and-drop icon" id="mira">
+      <img src="./oper_icon/lesion.jpg" alt="" class="drag-and-drop icon" id="lesion">
+      <img src="./oper_icon/lesion.jpg" alt="" class="drag-and-drop icon" id="lesion">
+      <img src="./oper_icon/lesion.jpg" alt="" class="drag-and-drop icon" id="lesion">
+      <img src="./oper_icon/lesion.jpg" alt="" class="drag-and-drop icon" id="lesion">
+      <img src="./oper_icon/lesion.jpg" alt="" class="drag-and-drop icon" id="lesion">
+      <img src="./oper_icon/ela.jpg" alt="" class="drag-and-drop icon" id="ela">
+      <img src="./oper_icon/ela.jpg" alt="" class="drag-and-drop icon" id="ela">
+      <img src="./oper_icon/ela.jpg" alt="" class="drag-and-drop icon" id="ela">
+      <img src="./oper_icon/ela.jpg" alt="" class="drag-and-drop icon" id="ela">
+      <img src="./oper_icon/ela.jpg" alt="" class="drag-and-drop icon" id="ela">
+      <img src="./oper_icon/vigil.jpg" alt="" class="drag-and-drop icon" id="vigil">
+      <img src="./oper_icon/vigil.jpg" alt="" class="drag-and-drop icon" id="vigil">
+      <img src="./oper_icon/vigil.jpg" alt="" class="drag-and-drop icon" id="vigil">
+      <img src="./oper_icon/vigil.jpg" alt="" class="drag-and-drop icon" id="vigil">
+      <img src="./oper_icon/vigil.jpg" alt="" class="drag-and-drop icon" id="vigil">
+      <img src="./oper_icon/maestro.jpg" alt="" class="drag-and-drop icon" id="maestro">
+      <img src="./oper_icon/maestro.jpg" alt="" class="drag-and-drop icon" id="maestro">
+      <img src="./oper_icon/maestro.jpg" alt="" class="drag-and-drop icon" id="maestro">
+      <img src="./oper_icon/maestro.jpg" alt="" class="drag-and-drop icon" id="maestro">
+      <img src="./oper_icon/maestro.jpg" alt="" class="drag-and-drop icon" id="maestro">
+      <img src="./oper_icon/alibi.jpg" alt="" class="drag-and-drop icon" id="alibi">
+      <img src="./oper_icon/alibi.jpg" alt="" class="drag-and-drop icon" id="alibi">
+      <img src="./oper_icon/alibi.jpg" alt="" class="drag-and-drop icon" id="alibi">
+      <img src="./oper_icon/alibi.jpg" alt="" class="drag-and-drop icon" id="alibi">
+      <img src="./oper_icon/alibi.jpg" alt="" class="drag-and-drop icon" id="alibi">
+      <img src="./oper_icon/clash.jpg" alt="" class="drag-and-drop icon" id="clash">
+      <img src="./oper_icon/clash.jpg" alt="" class="drag-and-drop icon" id="clash">
+      <img src="./oper_icon/clash.jpg" alt="" class="drag-and-drop icon" id="clash">
+      <img src="./oper_icon/clash.jpg" alt="" class="drag-and-drop icon" id="clash">
+      <img src="./oper_icon/clash.jpg" alt="" class="drag-and-drop icon" id="clash">
+      <img src="./oper_icon/kaid.jpg" alt="" class="drag-and-drop icon" id="kaid">
+      <img src="./oper_icon/kaid.jpg" alt="" class="drag-and-drop icon" id="kaid">
+      <img src="./oper_icon/kaid.jpg" alt="" class="drag-and-drop icon" id="kaid">
+      <img src="./oper_icon/kaid.jpg" alt="" class="drag-and-drop icon" id="kaid">
+      <img src="./oper_icon/kaid.jpg" alt="" class="drag-and-drop icon" id="kaid">
+      <img src="./oper_icon/mozzie.jpg" alt="" class="drag-and-drop icon" id="mozzie">
+      <img src="./oper_icon/mozzie.jpg" alt="" class="drag-and-drop icon" id="mozzie">
+      <img src="./oper_icon/mozzie.jpg" alt="" class="drag-and-drop icon" id="mozzie">
+      <img src="./oper_icon/mozzie.jpg" alt="" class="drag-and-drop icon" id="mozzie">
+      <img src="./oper_icon/mozzie.jpg" alt="" class="drag-and-drop icon" id="mozzie">
+      <img src="./oper_icon/warden.jpg" alt="" class="drag-and-drop icon" id="warden">
+      <img src="./oper_icon/warden.jpg" alt="" class="drag-and-drop icon" id="warden">
+      <img src="./oper_icon/warden.jpg" alt="" class="drag-and-drop icon" id="warden">
+      <img src="./oper_icon/warden.jpg" alt="" class="drag-and-drop icon" id="warden">
+      <img src="./oper_icon/warden.jpg" alt="" class="drag-and-drop icon" id="warden">
+      <img src="./oper_icon/goyo.jpg" alt="" class="drag-and-drop icon" id="goyo">
+      <img src="./oper_icon/goyo.jpg" alt="" class="drag-and-drop icon" id="goyo">
+      <img src="./oper_icon/goyo.jpg" alt="" class="drag-and-drop icon" id="goyo">
+      <img src="./oper_icon/goyo.jpg" alt="" class="drag-and-drop icon" id="goyo">
+      <img src="./oper_icon/goyo.jpg" alt="" class="drag-and-drop icon" id="goyo">
+      <img src="./oper_icon/wamai.jpg" alt="" class="drag-and-drop icon" id="wamai">
+      <img src="./oper_icon/wamai.jpg" alt="" class="drag-and-drop icon" id="wamai">
+      <img src="./oper_icon/wamai.jpg" alt="" class="drag-and-drop icon" id="wamai">
+      <img src="./oper_icon/wamai.jpg" alt="" class="drag-and-drop icon" id="wamai">
+      <img src="./oper_icon/wamai.jpg" alt="" class="drag-and-drop icon" id="wamai">
+      <img src="./oper_icon/oryx.jpg" alt="" class="drag-and-drop icon" id="oryx">
+      <img src="./oper_icon/oryx.jpg" alt="" class="drag-and-drop icon" id="oryx">
+      <img src="./oper_icon/oryx.jpg" alt="" class="drag-and-drop icon" id="oryx">
+      <img src="./oper_icon/oryx.jpg" alt="" class="drag-and-drop icon" id="oryx">
+      <img src="./oper_icon/oryx.jpg" alt="" class="drag-and-drop icon" id="oryx">
+      <img src="./oper_icon/melusi.jpg" alt="" class="drag-and-drop icon" id="melusi">
+      <img src="./oper_icon/melusi.jpg" alt="" class="drag-and-drop icon" id="melusi">
+      <img src="./oper_icon/melusi.jpg" alt="" class="drag-and-drop icon" id="melusi">
+      <img src="./oper_icon/melusi.jpg" alt="" class="drag-and-drop icon" id="melusi">
+      <img src="./oper_icon/melusi.jpg" alt="" class="drag-and-drop icon" id="melusi">
+      <img src="./oper_icon/aruni.jpg" alt="" class="drag-and-drop icon" id="aruni">
+      <img src="./oper_icon/aruni.jpg" alt="" class="drag-and-drop icon" id="aruni">
+      <img src="./oper_icon/aruni.jpg" alt="" class="drag-and-drop icon" id="aruni">
+      <img src="./oper_icon/aruni.jpg" alt="" class="drag-and-drop icon" id="aruni">
+      <img src="./oper_icon/aruni.jpg" alt="" class="drag-and-drop icon" id="aruni">
+      <img src="./oper_icon/thunderbird.jpg" alt="" class="drag-and-drop icon" id="thunderbird">
+      <img src="./oper_icon/thunderbird.jpg" alt="" class="drag-and-drop icon" id="thunderbird">
+      <img src="./oper_icon/thunderbird.jpg" alt="" class="drag-and-drop icon" id="thunderbird">
+      <img src="./oper_icon/thunderbird.jpg" alt="" class="drag-and-drop icon" id="thunderbird">
+      <img src="./oper_icon/thunderbird.jpg" alt="" class="drag-and-drop icon" id="thunderbird">
+      <img src="./oper_icon/thorn.jpg" alt="" class="drag-and-drop icon" id="thorn">
+      <img src="./oper_icon/thorn.jpg" alt="" class="drag-and-drop icon" id="thorn">
+      <img src="./oper_icon/thorn.jpg" alt="" class="drag-and-drop icon" id="thorn">
+      <img src="./oper_icon/thorn.jpg" alt="" class="drag-and-drop icon" id="thorn">
+      <img src="./oper_icon/thorn.jpg" alt="" class="drag-and-drop icon" id="thorn">
+      <img src="./oper_icon/azami.jpg" alt="" class="drag-and-drop icon" id="azami">
+      <img src="./oper_icon/azami.jpg" alt="" class="drag-and-drop icon" id="azami">
+      <img src="./oper_icon/azami.jpg" alt="" class="drag-and-drop icon" id="azami">
+      <img src="./oper_icon/azami.jpg" alt="" class="drag-and-drop icon" id="azami">
+      <img src="./oper_icon/azami.jpg" alt="" class="drag-and-drop icon" id="azami">
+      <img src="./oper_icon/solis.jpg" alt="" class="drag-and-drop icon" id="solis">
+      <img src="./oper_icon/solis.jpg" alt="" class="drag-and-drop icon" id="solis">
+      <img src="./oper_icon/solis.jpg" alt="" class="drag-and-drop icon" id="solis">
+      <img src="./oper_icon/solis.jpg" alt="" class="drag-and-drop icon" id="solis">
+      <img src="./oper_icon/solis.jpg" alt="" class="drag-and-drop icon" id="solis">
+      <img src="./oper_icon/fenrir.jpg" alt="" class="drag-and-drop icon" id="fenrir">
+      <img src="./oper_icon/fenrir.jpg" alt="" class="drag-and-drop icon" id="fenrir">
+      <img src="./oper_icon/fenrir.jpg" alt="" class="drag-and-drop icon" id="fenrir">
+      <img src="./oper_icon/fenrir.jpg" alt="" class="drag-and-drop icon" id="fenrir">
+      <img src="./oper_icon/fenrir.jpg" alt="" class="drag-and-drop icon" id="fenrir">
+      <div class="reinforcement_slot">
+        <span>강화</span>
+      </div>
+      <img src="./gadget_icon/reinforcement.jpg" alt="" class="reinforcement gadget drag-and-drop">
+      <img src="./gadget_icon/reinforcement.jpg" alt="" class="reinforcement gadget drag-and-drop">
+      <img src="./gadget_icon/reinforcement.jpg" alt="" class="reinforcement gadget drag-and-drop">
+      <img src="./gadget_icon/reinforcement.jpg" alt="" class="reinforcement gadget drag-and-drop">
+      <img src="./gadget_icon/reinforcement.jpg" alt="" class="reinforcement gadget drag-and-drop">
+      <img src="./gadget_icon/reinforcement.jpg" alt="" class="reinforcement gadget drag-and-drop">
+      <img src="./gadget_icon/reinforcement.jpg" alt="" class="reinforcement gadget drag-and-drop">
+      <img src="./gadget_icon/reinforcement.jpg" alt="" class="reinforcement gadget drag-and-drop">
+      <img src="./gadget_icon/reinforcement.jpg" alt="" class="reinforcement gadget drag-and-drop">
+      <img src="./gadget_icon/reinforcement.jpg" alt="" class="reinforcement gadget drag-and-drop">
+      <div class="wire_slot">
+        <span>철조망</span>
+      </div>
+      <img src="./gadget_icon/wire.jpg" alt="" class="wire gadget drag-and-drop">
+      <img src="./gadget_icon/wire.jpg" alt="" class="wire gadget drag-and-drop">
+      <img src="./gadget_icon/wire.jpg" alt="" class="wire gadget drag-and-drop">
+      <img src="./gadget_icon/wire.jpg" alt="" class="wire gadget drag-and-drop">
+      <img src="./gadget_icon/wire.jpg" alt="" class="wire gadget drag-and-drop">
+      <img src="./gadget_icon/wire.jpg" alt="" class="wire gadget drag-and-drop">
+      <img src="./gadget_icon/wire.jpg" alt="" class="wire gadget drag-and-drop">
+      <img src="./gadget_icon/wire.jpg" alt="" class="wire gadget drag-and-drop">
+      <div class="shield_slot">
+        <span>이동식 방패</span>
+      </div>
+      <img src="./gadget_icon/shield.jpg" alt="" class="shield gadget drag-and-drop">
+      <img src="./gadget_icon/shield.jpg" alt="" class="shield gadget drag-and-drop">
+      <img src="./gadget_icon/shield.jpg" alt="" class="shield gadget drag-and-drop">
+      <img src="./gadget_icon/shield.jpg" alt="" class="shield gadget drag-and-drop">
+      <img src="./gadget_icon/shield.jpg" alt="" class="shield gadget drag-and-drop">
+      <div class="camera_slot">
+        <span>방탄 카메라</span>
+      </div>
+      <img src="./gadget_icon/camera.jpg" alt="" class="camera gadget drag-and-drop">
+      <img src="./gadget_icon/camera.jpg" alt="" class="camera gadget drag-and-drop">
+      <img src="./gadget_icon/camera.jpg" alt="" class="camera gadget drag-and-drop">
+      <img src="./gadget_icon/camera.jpg" alt="" class="camera gadget drag-and-drop">
+      <img src="./gadget_icon/camera.jpg" alt="" class="camera gadget drag-and-drop">
+      <div class="impact_slot">
+        <span>충격 수류탄</span>
+      </div>
+      <img src="./gadget_icon/impact.jpg" alt="" class="impact gadget drag-and-drop">
+      <img src="./gadget_icon/impact.jpg" alt="" class="impact gadget drag-and-drop">
+      <img src="./gadget_icon/impact.jpg" alt="" class="impact gadget drag-and-drop">
+      <img src="./gadget_icon/impact.jpg" alt="" class="impact gadget drag-and-drop">
+      <img src="./gadget_icon/impact.jpg" alt="" class="impact gadget drag-and-drop">
+      <img src="./gadget_icon/impact.jpg" alt="" class="impact gadget drag-and-drop">
+      <img src="./gadget_icon/impact.jpg" alt="" class="impact gadget drag-and-drop">
+      <img src="./gadget_icon/impact.jpg" alt="" class="impact gadget drag-and-drop">
+      <div class="c4_slot">
+        <span>원격 제어 폭탄</span>
+      </div>
+      <img src="./gadget_icon/c4.jpg" alt="" class="c4 gadget drag-and-drop">
+      <img src="./gadget_icon/c4.jpg" alt="" class="c4 gadget drag-and-drop">
+      <img src="./gadget_icon/c4.jpg" alt="" class="c4 gadget drag-and-drop">
+      <img src="./gadget_icon/c4.jpg" alt="" class="c4 gadget drag-and-drop">
+      <img src="./gadget_icon/c4.jpg" alt="" class="c4 gadget drag-and-drop">
+      <div class="alarm_slot">
+        <span>근접 알람</span>
+      </div>
+      <img src="./gadget_icon/alarm.jpg" alt="" class="alarm gadget drag-and-drop">
+      <img src="./gadget_icon/alarm.jpg" alt="" class="alarm gadget drag-and-drop">
+      <img src="./gadget_icon/alarm.jpg" alt="" class="alarm gadget drag-and-drop">
+      <img src="./gadget_icon/alarm.jpg" alt="" class="alarm gadget drag-and-drop">
+      <img src="./gadget_icon/alarm.jpg" alt="" class="alarm gadget drag-and-drop">
+      <img src="./gadget_icon/alarm.jpg" alt="" class="alarm gadget drag-and-drop">
+      <img src="./gadget_icon/alarm.jpg" alt="" class="alarm gadget drag-and-drop">
+      <img src="./gadget_icon/alarm.jpg" alt="" class="alarm gadget drag-and-drop">
+      <div class="barricade_slot">
+        <span>바리케이드</span>
+      </div>
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <img src="./gadget_icon/barricade.jpg" alt="" class="barricade gadget drag-and-drop">
+      <div class="ovblock_slot">
+        <span>관측 차단기</span>
+      </div>
+      <img src="./gadget_icon/observationblocker.jpg" alt="" class="ovblock gadget drag-and-drop">
+      <img src="./gadget_icon/observationblocker.jpg" alt="" class="ovblock gadget drag-and-drop">
+      <img src="./gadget_icon/observationblocker.jpg" alt="" class="ovblock gadget drag-and-drop">
+      <img src="./gadget_icon/observationblocker.jpg" alt="" class="ovblock gadget drag-and-drop">
+      <img src="./gadget_icon/observationblocker.jpg" alt="" class="ovblock gadget drag-and-drop">
+      <img src="./gadget_icon/observationblocker.jpg" alt="" class="ovblock gadget drag-and-drop">
+      <img src="./gadget_icon/observationblocker.jpg" alt="" class="ovblock gadget drag-and-drop">
+      <img src="./gadget_icon/observationblocker.jpg" alt="" class="ovblock gadget drag-and-drop">
+      <img src="./gadget_icon/observationblocker.jpg" alt="" class="ovblock gadget drag-and-drop">
+    </div>
+    <!-- 방어측 구역 끝 -->
+    <!-- 아이콘 배치 영역 끝 -->
+    <!-- 그림그리기 영역 -->
+    <div class="container">
+        <div class="tabs">
+            <input id="bank2f" type="radio" name="tab_item" checked>
+            <label class="L1 tab_item" for="bank2f">은행 2층</label>
+            <input id="bank1f" type="radio" name="tab_item" checked>
+            <label class="L2 tab_item" for="bank1f">은행 1층</label>
+            <input id="bankb1" type="radio" name="tab_item" checked>
+            <label class="L3 tab_item" for="bankb1">은행 지하</label>
+            <input id="border2f" type="radio" name="tab_item">
+            <label class="L4 tab_item" for="border2f">국경 2층</label>
+            <input id="border1f" type="radio" name="tab_item">
+            <label class="L5 tab_item" for="border1f">국경 1층</label>
+            <input id="chalet2f" type="radio" name="tab_item">
+            <label class="L6 tab_item" for="chalet2f">별장 2층</label>
+            <input id="chalet1f" type="radio" name="tab_item">
+            <label class="L7 tab_item" for="chalet1f">별장 1층</label>
+            <input id="chaletb1" type="radio" name="tab_item">
+            <label class="L8 tab_item" for="chaletb1">별장 지하</label>
+            <input id="club2f" type="radio" name="tab_item">
+            <label class="L9 tab_item" for="club2f">클럽하우스 2층</label>
+            <input id="club1f" type="radio" name="tab_item">
+            <label class="L10 tab_item" for="club1f">클럽하우스 1층</label>
+            <input id="clubb1" type="radio" name="tab_item">
+            <label class="L11 tab_item" for="clubb1">클럽하우스 지하</label>
+            <input id="consulate2f" type="radio" name="tab_item">
+            <label class="L12 tab_item" for="consulate2f">영사관 2층</label>
+            <input id="consulate1f" type="radio" name="tab_item">
+            <label class="L13 tab_item" for="consulate1f">영사관 1층</label>
+            <input id="consulateb1" type="radio" name="tab_item">
+            <label class="L14 tab_item" for="consulateb1">영사관 지하</label>
+            <input id="kafe3f" type="radio" name="tab_item">
+            <label class="L15 tab_item" for="kafe3f">카페 3층</label>
+            <input id="kafe2f" type="radio" name="tab_item">
+            <label class="L16 tab_item" for="kafe2f">카페 2층</label>
+            <input id="kafe1f" type="radio" name="tab_item">
+            <label class="L17 tab_item" for="kafe1f">카페 1층</label>
+            <input id="nighthaven2f" type="radio" name="tab_item">
+            <label class="L18 tab_item" for="nighthaven2f">나이트헤븐 2층</label>
+            <input id="nighthaven1f" type="radio" name="tab_item">
+            <label class="L19 tab_item" for="nighthaven1f">나이트헤븐 1층</label>
+            <input id="nighthavenb1" type="radio" name="tab_item">
+            <label class="L20 tab_item" for="nighthavenb1">나이트헤븐 지하</label>
+            <input id="oregon3f" type="radio" name="tab_item">
+            <label class="L21 tab_item" for="oregon3f">오리건 3층</label>
+            <input id="oregon2f" type="radio" name="tab_item">
+            <label class="L22 tab_item" for="oregon2f">오리건 2층</label>
+            <input id="oregon1f" type="radio" name="tab_item">
+            <label class="L23 tab_item" for="oregon1f">오리건 1층</label>
+            <input id="oregonb1" type="radio" name="tab_item">
+            <label class="L24 tab_item" for="oregonb1">오리건 지하</label>
+            <input id="skyscraper2f" type="radio" name="tab_item">
+            <label class="L25 tab_item" for="skyscraper2f">마천루 2층</label>
+            <input id="skyscraper1f" type="radio" name="tab_item">
+            <label class="L26 tab_item" for="skyscraper1f">마천루 1층</label>
+            <div class="tab_content" id="bank2f">
+                <img src="./map_img/bank2f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="bank1f">
+                <img src="./map_img/bank1f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="bankb1">
+                <img src="./map_img/bankb1.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="border2f">
+                <img src="./map_img/border2f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="border1f">
+                <img src="./map_img/border1f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="chalet2f">
+                <img src="./map_img/chalet2f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="chalet1f">
+                <img src="./map_img/chalet1f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="chaletb1">
+                <img src="./map_img/chaletb1.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="club2f">
+                <img src="./map_img/club2f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="club1f">
+                <img src="./map_img/club1f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="clubb1">
+                <img src="./map_img/clubb1.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="consulate2f">
+                <img src="./map_img/consulate2f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="consulate1f">
+                <img src="./map_img/consulate1f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="consulateb1">
+                <img src="./map_img/consulateb1.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="kafe3f">
+                <img src="./map_img/kafe3f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="kafe2f">
+                <img src="./map_img/kafe2f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="kafe1f">
+                <img src="./map_img/kafe1f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="nighthaven2f">
+                <img src="./map_img/nighthaven2f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="nighthaven1f">
+                <img src="./map_img/nighthaven1f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="nighthavenb1">
+                <img src="./map_img/nighthavenb1.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="oregon3f">
+                <img src="./map_img/oregon3f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="oregon2f">
+                <img src="./map_img/oregon2f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="oregon1f">
+                <img src="./map_img/oregon1f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="oregonb1">
+                <img src="./map_img/oregonb1.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="skyscraper2f">
+                <img src="./map_img/skyscraper2f.jpg" alt="" class="map">
+            </div>
+            <div class="tab_content" id="skyscraper1f">
+                <img src="./map_img/skyscraper1f.jpg" alt="" class="map">
+            </div>
+        </div>
+        <canvas id="canvas" width="1600" height="900"></canvas><br>
+    <div class="palette">
+      <label>색깔<input id="color" type="color"></label>
+      <label>두께<input id="width" type="number" min="1" max="30"></label>
+      <input type="button" class="btn" id="reset_icon" value="아이콘 리셋" onClick="reset_icon()">
+      <input type="button" class="btn" id="delete_canvas" value="색칠 리셋" onClick="delete_canvas()">
+      <input type="button" class="btn" id="all_reset" value="모두 리셋" onClick="all_reset()">
+      <input type="image" id="pencil" src="./tool_icon/1.jpg" width="35px" class="active" onClick="tool(1)">
+      <input type="image" id="eraser" src="./tool_icon/2.jpg" width="35px" onClick="tool(2)">
+    </div>
+  </div>
+    </div>
+    <!-- 그림그리기 영역 끝 -->
+    <script type="text/javascript">
+        // 아이콘 배치 리셋
+        var elements = document.getElementsByClassName("drag-and-drop");
+        var array = [];
+        for (var i = 0; i < elements.length; i++) {
+          array[i] = {}
+          array[i].top = elements[i].style.top;
+          array[i].left = elements[i].style.left;
+        }
+    
+        function reset_icon() {
+          ret = confirm('아이콘 배치 초기화');
+          if (ret == true) {
+            for (var i = 0; i < elements.length; i++) {
+              elements[i].style.top = array[i].top;
+              elements[i].style.left = array[i].left;
+            }
+          }
+        }
+        //　아이콘 배치 리셋 끝
+        function all_reset() {
+          ret = confirm('전체 초기화');
+          if (ret == true) {
+            for (var i = 0; i < elements.length; i++) {
+              elements[i].style.top = array[i].top;
+              elements[i].style.left = array[i].left;
+            }
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+          }
+        }
+      </script>
+    <script type="text/javascript" src="./js/Drag.js"></script>
+    <script type="text/javascript" src="./js/canvas.js"></script>
+</html>
