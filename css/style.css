@@ -991,11 +991,15 @@ label {
   top: 65px;
   left: 685px;
 }
-#brava {
+#grim {
   top: 105px;
   left: 10px;
 }
-#ram {
+#brava {
   top: 105px;
   left: 55px;
+}
+#ram {
+  top: 105px;
+  left: 100px;
 }
